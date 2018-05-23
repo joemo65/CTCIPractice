@@ -10,11 +10,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BubbleSortTests {
+public class MergeSortTests {
 
 	@Test
-	public void BubbleSort_Integer_Swap_ArrayEquals() {
-        BubbleSort sort = new BubbleSort();
+	public void MergeSort_Integer_Swap_ArrayEquals() {
+        MergeSort sort = new MergeSort();
         Integer[] test = new Integer[] { 3, 2, 1 };
 
         sort.swap(0, 2, test);
@@ -23,8 +23,8 @@ public class BubbleSortTests {
     }
     
     @Test
-	public void BubbleSort_Integer_Sort_ArrayEquals() {
-        BubbleSort sort = new BubbleSort();
+	public void MergeSort_Integer_Sort_ArrayEquals() {
+        MergeSort sort = new MergeSort();
         Integer[] test = new Integer[] { 3, 2, 1 };
 
         sort.sort(test);
@@ -33,8 +33,8 @@ public class BubbleSortTests {
     }
     
     @Test
-	public void BubbleSort_Integer_Sort2_ArrayEquals() {
-        BubbleSort sort = new BubbleSort();
+	public void MergeSort_Integer_Sort2_ArrayEquals() {
+        MergeSort sort = new MergeSort();
         Integer[] test = new Integer[] { 5, 10, 9, 20, 1 };
 
         sort.sort(test);
